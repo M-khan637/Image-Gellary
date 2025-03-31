@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="gallery-container">
+        <div class="header">
+            <h1>Image Gallery</h1>
+            <p>A collection of beautiful photography</p>
+        </div>
+
+        <div class="controls">
+            <button class="filter-btn active" data-filter="all">All Images</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="people">People</button>
+        </div>
+
+        <div class="gallery" id="gallery">
+         
+            <div class="gallery-item" data-category="nature">
+              <img src="/images/1.-Mountain-Landscape.jpg" alt="Mountain-Landscape" >
+                <h3> Mountain Landscape</h3>
+            </div>
+
+            <div class="gallery-item" data-category="architecture">
+                <img src="/images/Modern Skyscraper.jpg" alt="Modern Skyscraper" >
+                <h3>Modern Skyscraper</h3>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="/images/Ocean Sunset.jpg" alt="Ocean Sunset" >
+                <h3>Ocean Sunset</h3>
+            </div>
+
+            <div class="gallery-item" data-category="architecture">
+                <img src="/images/Historic Bridge.jpg" alt="Historic Bridge" >
+                <h3>Historic Bridge</h3>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="/images/Portrait Photography.jpg" alt="Portrait Photography" >
+                <h3>Portrait Photography</h3>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="/images/Desert Landscape.jpg" alt="Desert Landscape" >
+                <h3>Desert Landscape</h3>
+            </div>
+
+            <div class="gallery-item" data-category="architecture">
+                <img src="/images/City Street.jpg" alt="City Street" >
+                <h3>City Street</h3>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="/images/Family Portrait.jpg" alt="Family Portrait" >
+                <h3>Family Portrait</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="imageModal">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="modal-content">
+            <img class="modal-img" id="modalImg" src="" alt="">
+            <h3 id="modalCaption"></h3>
+            <button class="nav-button prev" id="prevBtn">&#10094;</button>
+            <button class="nav-button next" id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   
+    <script src="/java/javascript.js"></script>
+</body>
+</html>
